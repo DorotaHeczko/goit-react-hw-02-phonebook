@@ -5,7 +5,10 @@ import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
 import css from './App.module.css';
 
+
+
 export class App extends Component {
+
   state = {
     contacts: [
       { id: 'id-1', name: 'Annie Copeland', number: '227-91-26' },
@@ -15,6 +18,8 @@ export class App extends Component {
     ],
     filter: '',
   };
+
+
 
   newName = (name, number) => {
     const { contacts } = this.state;
